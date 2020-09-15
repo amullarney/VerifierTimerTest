@@ -1,0 +1,92 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("c95336bd-ebe4-4d0b-b3b2-51285f550358",
+	"00000000-0000-0000-0000-000000000000",
+	"53f7ea82-c25a-4f52-845a-32ea539826d1",
+	'Functions',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("5636148a-ff07-4a9e-bde5-035fc01efea5",
+	112,
+	"c95336bd-ebe4-4d0b-b3b2-51285f550358",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'',
+	'TimerTest::Components::Test::Functions');
+INSERT INTO DIM_DIA
+	VALUES ("5636148a-ff07-4a9e-bde5-035fc01efea5",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("5a1cb5bf-8a73-47f1-b94e-d697606cb00b",
+	"00000000-0000-0000-0000-000000000000",
+	'RunTest1',
+	'',
+	'create object instance forever of SingleShotRepeater;
+forever.start();',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("5a1cb5bf-8a73-47f1-b94e-d697606cb00b",
+	1,
+	"c95336bd-ebe4-4d0b-b3b2-51285f550358",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("d77c04ee-6144-4042-bf29-8d82c12fc5a8",
+	"00000000-0000-0000-0000-000000000000",
+	'RunTest2',
+	'',
+	'create object instance forever of RecurringRepeater;
+forever.start();
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("d77c04ee-6144-4042-bf29-8d82c12fc5a8",
+	1,
+	"c95336bd-ebe4-4d0b-b3b2-51285f550358",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("c95336bd-ebe4-4d0b-b3b2-51285f550358",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"1438fa68-79a4-4061-9a82-9bf45576b813",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("1438fa68-79a4-4061-9a82-9bf45576b813",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'Test',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../Test.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("53f7ea82-c25a-4f52-845a-32ea539826d1",
+	'TimerTest',
+	1,
+	'../../../TimerTest.xtuml');
