@@ -1,0 +1,32 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("4c5554d3-b5fb-47f6-887a-785de9da0451",
+	'observation',
+	3,
+	'observation',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_ID
+	VALUES (0,
+	"4c5554d3-b5fb-47f6-887a-785de9da0451");
+INSERT INTO O_ID
+	VALUES (1,
+	"4c5554d3-b5fb-47f6-887a-785de9da0451");
+INSERT INTO O_ID
+	VALUES (2,
+	"4c5554d3-b5fb-47f6-887a-785de9da0451");
+INSERT INTO PE_PE
+	VALUES ("4c5554d3-b5fb-47f6-887a-785de9da0451",
+	1,
+	"6fb5b087-e55a-4deb-9da4-15bff6f8be32",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("6fb5b087-e55a-4deb-9da4-15bff6f8be32",
+	"00000000-0000-0000-0000-000000000000",
+	"53f7ea82-c25a-4f52-845a-32ea539826d1",
+	'TestEntities',
+	'',
+	0,
+	'../TestEntities.xtuml');
